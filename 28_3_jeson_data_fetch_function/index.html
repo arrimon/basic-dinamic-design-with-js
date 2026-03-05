@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>JESON Data Fetch Function</title>
+</head>
+<body class="h-screen overflow-hidden">
+    <!-- Top Section (Always Visible) -->
+    <section class="h-60 bg-gray-200 flex justify-center items-center gap-2 sticky top-0 z-50">
+        <button onclick="loadData()" class="btn btn-outline btn-info">Load Data</button>
+        <button onclick="loadPost()" class="btn btn-outline btn-info">Load Post</button>
+    </section>
+
+    <!-- Scrollable Section -->
+    <section class="h-[calc(100vh-80px)] overflow-y-auto bg-gray-100 p-10">
+        
+        <!-- <ol id="post-contents" class="list"></ol> -->
+
+        <div id="post-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+
+    </section>
+    <!-- <h2>Learning JESON</h2> -->
+    <!-- js json data connected -->
+    <!-- <script src="./script.js"></script> -->
+    <script src="./post.js"></script>
+</body>
+</html>
