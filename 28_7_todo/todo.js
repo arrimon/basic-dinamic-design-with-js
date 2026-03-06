@@ -1,11 +1,14 @@
-const loadTod = () => {
+const loadTod = async () => {
     const url = 'https://jsonplaceholder.typicode.com/todos';
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            // console.log(data);
-            displayTodo(data);
-        })
+    // fetch(url)
+    //     .then(res => res.json())
+    //     .then(data => {
+        //     // console.log(data);
+        //     displayTodo(data);
+        // })
+    const res = await fetch(url);
+    const data = await res.json();
+    displayTodo(data);
 }
 
 // Know abot todos api look like
